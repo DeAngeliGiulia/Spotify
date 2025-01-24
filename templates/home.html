@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h2>Benvenuto, {{ username }}</h2>
+        {% for i in data %}
+        <p>Nome: {{i.name}} veicolo: {{i.craft}}</p>
+        {% endfor %}
+    <a href="{{ url_for('logout') }}">Esci</a>
+</body>
+</html>
